@@ -43,7 +43,7 @@ func kernelVersion() (major, minor int) {
 }
 
 func init() {
-	controlFns = append(controlFns,
+	ControlFns = append(ControlFns,
 
 		// Attempt to set the socket buffer size beyond net.core.{r,w}mem_max by
 		// using SO_*BUFFORCE. This requires CAP_NET_ADMIN, and is allowed here to
